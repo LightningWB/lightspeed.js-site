@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>faq</title>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/default.min.css">
+		<!-- my styles -->
+		<link rel="stylesheet" href="/styles/global.css">
+		<link rel="stylesheet" href="/styles/navbar.css">
+	</head>
+	<body>
+		<div id="navbar">
+			<a href="/" class="navBarItem" style="float: left; margin-left: 100px;">
+				lightspeed.js
+			</a>
+			<a href="https://github.com/LightningWB/lightspeed.js" class="navBarItem">Github</a>
+			<a href="/faq.html" class="navBarItem">FAQ</a>
+			<a href="/documentation.html" class="navBarItem">Documentation</a>
+			<a href="/starting_out.html" class="navBarItem">Starting Out</a>
+		</div>
+		<div id="main">
+<h1 id="why-do-i-get-errors-when-using-subdomains">Why do I get errors when using subdomains</h1>
+<p>Make sure you set <code>start</code> to false, so you don't get two servers trying to listen on one domain.</p>
+<h1 id="why-isnt-my-parser-working">Why isn't my parser working</h1>
+<p>Streaming files bypasses the page parser, so just disabling streaming html files should fix the problem.</p>
+<h1 id="why-am-i-getting-weird-response-from-return-function-async-return-function">Why am I getting weird response from returnFunction/asyncReturnFunction</h1>
+<p>This is because if an error occurs while writing data to the page, the marker for the location to write the result is never replaced.</p>
+<p>Short answer: your code errors out.</p>
+<h1 id="why-arent-any-of-these-solutions-what-im-looking-for">Why aren't any of these solutions what I'm looking for</h1>
+<p>Try to update lightspeed and if the issue persists, go and report it on <a href="https://github.com/LightningWB/lightspeed.js/issues">the issue tracker</a>.</p>
+
+		</div>
+	</body>
+	<!-- code block highlighting -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			document.querySelectorAll('pre code').forEach((block) => {
+				hljs.highlightBlock(block);
+			});
+		});
+	</script>
+	<script>
+		const copyToClipboard = e=>{const t=document.createElement("textarea");t.value=e||" ",t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",document.body.appendChild(t),t.select(),document.execCommand("copy"),document.body.removeChild(t)};
+	</script>
+</html>
