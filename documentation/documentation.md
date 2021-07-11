@@ -243,6 +243,12 @@ Variables accessible to the  the [the included parser](/parser.html).
 | function |
 
 Reloads all static files asynchronously.
+### reloadPosts
+| reloadPosts |
+| :---: |
+| function |
+
+Rebuilds the internal post request tree using the same object passed in the startup parameters.
 ### server
 | server |
 | :---: |
