@@ -12,7 +12,7 @@
 }
 
 #navbar{
-	height: 55px;
+	height: 60px;
 	padding-bottom: 0px;
 	padding-right: 80px;
 }
@@ -20,7 +20,7 @@
 .navBarItem{
 	transition: background-color .35s;
 	padding: 15px;
-	font-size: 23px;
+	font-size: 1.8em;
 	float: right;
 	width: max-content;
 	cursor: pointer;
